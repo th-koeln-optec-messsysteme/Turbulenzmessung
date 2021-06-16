@@ -3,7 +3,7 @@
 Dieses Projekt wird im Rahmen der Lehrveranstaltung Messsysteme, der TH Köln im SoSe2021 bearbeitet.
 
 ##Projektbeschreibung
-Es behandelt Die Turbulenzmessung mittels Gyrosensoren, welche in Radiosonden an Wetterballons angebracht werden und in die Atmosphäre aufsteigen.
+Es behandelt die Turbulenzmessung mittels Gyrosensoren, welche in Radiosonden an Wetterballons angebracht werden und in die Atmosphäre aufsteigen.
 Mithilfe der von den Gyrosensoren aufgenommenen Daten, können Rückschlüsse, sowohl auf die Stärke der Turbulenzen als auch die Höhe (turbulent region), in der dieses Auftreten, gezogen werden.
 
 ##Ziel
