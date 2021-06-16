@@ -9,6 +9,7 @@ Mithilfe der von den Gyrosensoren aufgenommenen Daten, können Rückschlüsse, s
 ### Ziel
 Ziel des Projektes ist es, eine Radiosonde zu entwickeln, welche wir in die Atmosphäre steigen zu lassen, um eigene Daten über Turbulenzen aufzunehmen und auszuwerten.
 
+
 # English
 ## Turbulence measurement
 This project is being worked on as part of the course Measurement Systems, TH Köln in SoSe2021.
