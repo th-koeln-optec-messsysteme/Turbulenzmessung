@@ -31,8 +31,9 @@ We are aiming to find a good price to performance ratio and easy implementable s
 
 We have found two sensors that best suit our needs:
 
-https://www.adafruit.com/product/4565
+
 ![](Images/SensorCheap.png)
+https://www.adafruit.com/product/4565
 
 * 3 axes of accelerometer data
 * 3 axes gyroscopic
@@ -40,8 +41,8 @@ https://www.adafruit.com/product/4565
 
 
 
-https://www.adafruit.com/product/1604
 ![](Images/SensorExpensive.png)
+https://www.adafruit.com/product/1604
 
 * 3 axes of accelerometer data
 * 3 axes gyroscopic
