@@ -34,20 +34,20 @@ We have found two sensors that best suit our needs:
 https://www.adafruit.com/product/4565
 ![](Images/SensorCheap.png)
 
--3 axes of accelerometer data
--3 axes gyroscopic
--3 axes magnetic (compass)
+*3 axes of accelerometer data
+*3 axes gyroscopic
+*3 axes magnetic (compass)
 
 
 
 https://www.adafruit.com/product/1604
 ![](Images/SensorExpensive.png)
 
--3 axes of accelerometer data
--3 axes gyroscopic
--3 axes magnetic (compass)
--barometric pressure/altitude
--temperature.
+*3 axes of accelerometer data
+*3 axes gyroscopic
+*3 axes magnetic (compass)
+*barometric pressure/altitude
+*temperature.
 
 Both sensors are easy to implement because they use the same libraries as the sensor of the first experiment.
 
