@@ -1,22 +1,34 @@
-# Deutsch
-## Turbulenzmessung
+# Turbulenzmessung
 Dieses Projekt wird im Rahmen der Lehrveranstaltung Messsysteme, der TH Köln im SoSe2021 bearbeitet.
 
-### Projektbeschreibung
-Es behandelt die Turbulenzmessung mittels Gyrosensoren, welche in Radiosonden an Wetterballons angebracht werden und in die Atmosphäre aufsteigen.
-Mithilfe der von den Gyrosensoren aufgenommenen Daten, können Rückschlüsse, sowohl auf die Stärke der Turbulenzen als auch die Höhe (turbulent region), in der dieses Auftreten, gezogen werden.
+__Projektbeschreibung__
+Es behandelt die Turbulenzmessung mittels Trägheitsmesseinheit (Inertial Measurement Unit = IMU), welche in Radiosonden an Wetterballons angebracht werden und in die Atmosphäre aufsteigen.
+Mithilfe der von den IMUs aufgenommenen Daten, können Rückschlüsse, sowohl auf die Stärke der Turbulenzen als auch die Höhe (turbulent region), in der dieses Auftreten, gezogen werden.
 
-### Ziel
-Ziel des Projektes ist es, eine Radiosonde zu entwickeln, welche wir in die Atmosphäre steigen zu lassen, um eigene Daten über Turbulenzen aufzunehmen und auszuwerten.
+Das Projekt unterteilt sich in 3 Abschnitte:
+1.	Aufbereitung empfangener Radiosonden Daten 
+2.	Untersuchung von Bewegungsdaten eines Wetterballonsaufstiegs
+3.	Vergleich verschiedener IMUs hinsichtlich der Tauglichkeit an in einer Radiosonde
 
+----
+## Software
+Ziel des Projektes ist es, einen Radiosonde zu entwickeln, welche wir in die Atmosphäre steigen zu lassen, um eigene Daten über Turbulenzen aufzunehmen und auszuwerten.
 
-# English
-## Turbulence measurement
-This project is being worked on as part of the course Measurement Systems, TH Köln in SoSe2021.
+__CSV-XDATA-Parser__
+Im ersten Schritt werden die empfangenen XDATA vom Byte Format in lesbare Floats umgewandelt. Dabei werden die Daten auf mögliche CRC Fehler untersucht und fehlerhafte Datensätze gelöscht.
 
-### Project description
-It deals with the measurement of turbulence by means of gyro sensors, which are attached to weather balloons in radiosondes which ascend into the atmosphere.
-With the help of the data recorded by the gyro sensors, conclusions can be drawn about the strength of the turbulence as well as the height at which it occurs (turbulent region).
+__CSV-XDATA-Combiner__
+Mit diesem Skript können unterschiedliche XDATA Datensätze aus dem CSV-XDATA-Parsers anhand des Zeitstempels zusammengeführt werden.
+Die 5 Messwerte pro Sekunde werden als Varianz ausgeben.
 
-### Objective
-The goal of the project is to develop a radiosonde that we can launch into the atmosphere to collect and analyse our own data on turbulence.
+__CSV-RAW-RS41-Combiner__
+Mit diesem Skript wird der RS41 Tracker Export um die XDATA ergänzt.
+
+__CSV-Plotter__
+Dieses Skript dient der Datenauswertung. Dafür werden als erstes mehre Höhendiagramme erstellt. Die Y-Achse verschiebt sich dabei auf allen Diagramen simultan um eine einfaches vergleichen bei einer bestimmten Höhe zu ermöglichen. 
+Als nächstes wird die Kovarianzmatrix geplottet. Aus dieser lassen sich mögliche Zusammenhänge verschiedener Parameter erkennen.
+----
+##  Hardware
+
+Es sollte ein Inertial Measurement Unit (IMU) gefunden werden die zusätzlich die Veränderungen des Magnetfeldes in 3 Richtungen erfasst. Die zuletzt benutzte IMU erfasste nur 6 Achsen. Die Preise stammen von octopart.com . Eine Vergleichstabelle und die Datenblätter befinden sich im Ordner Hardware.
+Wir empfehlen den BMX160 da er kostengünstig ist und einen geringen Energieverbrauch hat.
