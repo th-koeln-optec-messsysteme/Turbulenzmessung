@@ -68,4 +68,4 @@ Zudem ist der Sensor wesentlich günstiger und besitzt ein zusätzliches I2C int
 
 Wir empfehlen den ICM-20948 von InvenSense da er kostengünstig ist und einen geringen Energieverbrauch hat.
 
-![](Images/SensorMatrix%20XSLX.png)
+![](Images/SensorMatrixXSLX.png)
