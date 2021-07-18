@@ -55,11 +55,11 @@ struct, csv, os, operator, statistics, numpy, matplotlib.pyplot, matplotlib.tick
 
 Es sollte ein Inertial Measurement Unit (IMU) gefunden werden die zusätzlich die Veränderungen des Magnetfeldes in 3 Richtungen erfasst. Die zuletzt benutzte IMU erfasste nur 6 Achsen. Die Preise stammen von octopart.com. Eine Vergleichstabelle und die dazugehörigen Datenblätter befinden sich im Ordner Hardware.
 
-Es gibt bis jetzt nur 3 nennenswerte Hersteller von 9 Achsen IMU-ICUs: Bosch, STMicroelectronics und Invensense. Diese IMUs oftmals für die Anwendung in einem Android Smartphone konzipiert für einen Temperaturbereich von -40°C bis +80°C. Andere Hersteller konzentrieren sich auf Sensoren für Flugzeuge z.B. Honeywell. Diese sind wesentlich genauer und haben auch einen erweiterten Betriebstemperaturbereich bis -54°C. Leider sind diese IMUs sehr teuer $1000+ und auch viel zu groß. IMUs für Temperaturen bis -65°C sind ansonsten nur noch im Militärbereich anzutreffen und unterliegen strengen Regulierungen. Bosch ist auch ein Lieferant für Militär IMUs.
+Es gibt bis jetzt nur 3 nennenswerte Hersteller von 9 Achsen IMU-ICUs: Bosch, STMicroelectronics und InvenSense. Diese IMUs oftmals für die Anwendung in einem Android Smartphone konzipiert für einen Temperaturbereich von -40°C bis +80°C. Andere Hersteller konzentrieren sich auf Sensoren für Flugzeuge z.B. Honeywell. Diese sind wesentlich genauer und haben auch einen erweiterten Betriebstemperaturbereich bis -54°C. Leider sind diese IMUs sehr teuer $1000+ und auch viel zu groß. IMUs für Temperaturen bis -65°C sind ansonsten nur noch im Militärbereich anzutreffen und unterliegen strengen Regulierungen. Bosch ist auch ein Lieferant für Militär IMUs.
 
 Die von uns verglichenen IMUs besitzen alle einen eingebauten Mikrocontroller, der die Sensor Daten auswertet und es ermöglicht den Messbereich festzulegen. Die Messbereiche und die Empfindlichkeiten sind bei allen Sensoren ähnlich. Die größten Unterschiede sind im Energieverbrauch zu finden. Der BMX160 von Bosch ist dabei am sparsamsten und laut Bosch auch der kleinste derzeit verfügbare Chip.
 
-Auf dem zweiten Platz liegt der ICM-20948 von Invensense. Für diesen Sensor ist ein Adafruit Board mit fertigen Bibliotheken verfügbar. https://www.adafruit.com/product/4554
+Auf dem zweiten Platz liegt der ICM-20948 von InvenSense. Für diesen Sensor ist ein Adafruit Board mit fertigen Bibliotheken verfügbar. https://www.adafruit.com/product/4554
 Zudem ist der Sensor wesentlich günstiger und besitzt ein zusätzliches I2C interface an dem weitere Sensoren angeschlossen werden können.
 
-Wir empfehlen den ICM-20948 von Invensense da er kostengünstig ist und einen geringen Energieverbrauch hat.
+Wir empfehlen den ICM-20948 von InvenSense da er kostengünstig ist und einen geringen Energieverbrauch hat.
