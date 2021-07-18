@@ -40,11 +40,15 @@ Dieses Skript dient der Datenauswertung. Dafür werden als erstes mehre Höhendi
 Als nächstes wird die Kovarianzmatrix geplottet. Aus dieser lassen sich mögliche zusammenhänge verschiedener Parameter erkennen.
 Zum Schluss werden nochmals die ersten Höhendiagrame zusammen mit den IMU Daten aus den Subframes geplottet.
 
+![](Images/HöhenPlot-IMU-Plotter.png)
+![](Images/Covariance_Matrix-IMU-Plotter.png)
+![](Images/RAW-IMU-Plotter.png)
 
 __06_CSV-Variance-Plotter__
 
 Hier werden 10 Höhendiagrame geplottet aus dem RS41-Tracker und den 6 IMU Varianzen pro Sekunde.
 
+![](Images/Variance-Plotter.png)
 
 Die folgenden Python-Pakete wurden in den Skripten benutzt:
 struct, csv, os, operator, statistics, numpy, matplotlib.pyplot, matplotlib.ticker, pandas und seaborn
